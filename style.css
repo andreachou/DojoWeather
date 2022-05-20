@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-nav {
+    background-color: #9fc5f8;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+#city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+#city li {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+#city a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.container-top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:black 3px solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.weather{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+
+.weather-col{
+    background-color:#eeeeee;
+    width:220px;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.weather img {
+    border-radius: 50%;
+    height: 100px;
+    margin:20px 0;
+}
+
+
+#temp-unit {
+    margin-left:10px;
+    width:50px;
+}
+
+
+
+
+
+
+.temperature {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.hotest{
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.coldest{
+    color:#3d83e5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cookies{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border:black 3px solid;
+    background-color:#eeeeee;
+    height:100px;
+    padding:10px;
+    position:fixed;
+    width: 1000px;
+}
+
+.cookie-message {
+    margin:10px 30px;
+}
+
+#btn {
+    background-color: #9fc5f8;
+    width: 90px;
+    height:30px;
+    box-shadow: 3px 3px black;
+    margin-right:10px;
+}

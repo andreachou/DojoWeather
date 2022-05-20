@@ -1,0 +1,111 @@
+<!-- DojoWeather 05.18.2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <!-- top navigation -->
+    <div class="top-nav">
+        <h1>DojoWeather</h1>
+        <ul id="city">
+            <li><a href="#" onclick="alertMessage()">Burbank</a></li>
+            <li><a href="#" onclick="alertMessage()">Chicago</a></li>
+            <li><a href="#" onclick="alertMessage()">Dallas</a></li>
+        </ul>
+    </div>
+
+    <!-- body -->
+    <div class="container">
+
+        <!-- selected city and Temperature C/F -->
+        <div class="container-top">
+            <h2>San Jose</h2>
+            <form>
+                <label for="temp-unit">show temperature in</label>
+                <select id="temp-unit" name="unit" onchange="tempUnit(this)">
+                    <option value="celsius">℃</option>
+                    <option value="fahrenheit">℉</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- weather -->
+        <div class="weather">
+            <!-- today temp -->
+            <div class="weather-col">
+                <div>
+                    <h3>Today</h3>
+                    <img src="./assets/some_rain.png" alt="some rain">
+                    <p>some rain</p>
+                </div>
+                <div class="temperature">
+                    <p class="hotest"><span id="today-hotest">24°</span></p>
+                    <p class="coldest"><span id="today-coldest">18°</span></p>
+                </div>
+            </div>
+
+            <!-- tomorrow temp -->
+            <div class="weather-col">
+                <div>
+                    <h3>Tomorrow</h3>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <p>some sun</p>
+                </div>
+                <div class="temperature">
+                    <p class="hotest"><span id="tomorrow-hotest">27°</span></p>
+                    <p class="coldest"><span id="tomorrow-coldest">19°</span></p>
+                </div>
+            </div>
+
+            <!-- Friday temp -->
+            <div class="weather-col">
+                <div>
+                    <h3>Friday</h3>
+                    <img src="./assets/some_clouds.png" alt="some clouds">
+                    <p>some clouds</p>
+                </div>
+                <div class="temperature">
+                    <p class="hotest"><span id="friday-hotest">21°</span></p>
+                    <p class="coldest"><span id="friday-coldest">16°</span></p>
+                </div>
+            </div>
+
+            <!-- Saturday temp -->
+            <div class="weather-col">
+                <div>
+                    <h3>Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <p>some sun</p>
+                </div>
+                <div class="temperature">
+                    <p class="hotest"><span id="saturday-hotest">26°</span></p>
+                    <p class="coldest"><span id="saturday-coldest">21°</span></p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- cookie alert -->
+        <div class="cookies" id="message">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div class="cookie-message">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media feature and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button id="btn" onclick="accept('message')">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
